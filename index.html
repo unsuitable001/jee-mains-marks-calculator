@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JEE (Mains - NTA) Marks Calculator - 2019</title>
+</head>
+<style>
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+body {
+    display: table-cell;
+    vertical-align: middle;
+}
+h1, h3, h4, p, div, span{
+    text-align: center;
+}
+</style>
+<body>
+    <h1>Upload Your JEE Main Response Key Here</h1>
+    <h4>If you don't have your response key, download from <a href="https://jeemain.nic.in/JeeMainApp/Root/LoginPage.aspx?enc=lvPCwHHVIYsd2orLT/JWsg==">NTA JEE WEBSITE</a></h4>
+    <!-- <h3><a href="instruction.html">If you don't know how to save the response key, view this instruction</a></h3> -->
+    <br>
+    <div>
+        <input id="response" type="file" accept=".html,.htm" />
+        <!-- <input id="response" type="text" />
+        <button id="submit" onclick="startParse();">SUBMIT</button> -->
+    </div>
+    <br>
+    <p>
+    	<h1>INSTRUCTION</h1>
+       1.  Login to your JEE MAINS DASHBOARD on <a href="https://jeemain.nic.in/JeeMainApp/Root/LoginPage.aspx?enc=lvPCwHHVIYsd2orLT/JWsg==">NTA JEE WEBSITE</a><br>
+       2. After login, you will get the option to view your response key.<br>
+       3. When the response key is loaded in the browser, press "Ctrl+s" to save the file as ".html" format.<br>
+       4. Upload the saved file above (by clicking the "Browse..." button).<br>
+	   <br>
+    </p>
+    <br>
+    <h3>Calculated Marks</h3>
+    <div id="marks"></div>
+    <iframe id="ansdoc" src="data/AnswerKey.html" style="opacity: 0; z-index: -12"></iframe>
+	<iframe id="respdoc" src="" style="opacity: 0; z-index: -11"></iframe>
+	<p>JEE Mains answer key maybe the subject to copyright of NTA. <a href="https://github.com/unsuitable001/jee-mains-marks-calculator/blob/master/README.md">Read Fair Usage Disclaimer</a></p>
+	<p>Get The Source Code at <a href="https://github.com/unsuitable001/jee-mains-marks-calculator">Github</a></p>
+	<p>Chat with me on <a href="https://gitter.im/unsuitable001">Gitter</a></p>
+	<p>Under MIT License. unsuitable001. I'm not responsible for any kind no loss made by this progam.</p>
+    <script src="index.js"></script>
+</body>
+</html>
