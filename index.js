@@ -51,7 +51,7 @@ function calculate(){
         else{
             currentResp = wholeResp[x].children[0].children[Number(currentResp) + 1].children[1].innerText;
             if(wholeAns.indexOf(currentResp) == '-1'){
-                if(grace.indexOf(cwholeResp[x].children[0].children[1].children[1].innerText) == '-1'){
+                if(grace.indexOf(wholeResp[x].children[0].children[1].children[1].innerText) == '-1'){
                     marks -= 1;
                     reswindow.innerHTML += "-1 at question " + (x+1) + "<br>";
                 }
