@@ -20,7 +20,7 @@ filesInput.addEventListener("change", function (event) {
         var reader = new FileReader();
     }
     catch{
-        alert("Your Browser Doesn't support the File Reader API. Please Update your browser.");
+        alert("Your Browser Doesn't support the File Reader API. Please Update your browser. \n I'm sending you to the old website, which has better compatibility. \n Press ok to continue...");
         window.location.href = 'https://unsuitable001.github.io/jee-marks-calculator/old.html'
     }
     reader.addEventListener("load", function (event) {
@@ -51,7 +51,7 @@ function calculate(){
         else{
             currentResp = wholeResp[x].children[0].children[Number(currentResp) + 1].children[1].innerText;
             if(wholeAns.indexOf(currentResp) == '-1'){
-                if(grace.indexOf(currentResp) == '-1'){
+                if(grace.indexOf(cwholeResp[x].children[0].children[1].children[1].innerText) == '-1'){
                     marks -= 1;
                     reswindow.innerHTML += "-1 at question " + (x+1) + "<br>";
                 }
